@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:3.6
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo:/var/lib/mongo
+volumes:
+  mongo: ~
